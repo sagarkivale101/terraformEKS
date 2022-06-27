@@ -10,7 +10,7 @@ provider "aws" {
 data "aws_availability_zones" "available" {}
 
 locals {
-  cluster_name = "gessa-test-${random_string.suffix.result}"
+  cluster_name = "gessa-${random_string.suffix.result}"
 }
 
 resource "random_string" "suffix" {
