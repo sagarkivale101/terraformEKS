@@ -19,17 +19,17 @@ module "eks" {
       additional_security_group_ids = [aws_security_group.worker_group_mgmt_one.id]
       asg_desired_capacity          = descapacity
     },{
-      name                          = "workergrpname1"
-      instance_type                 = "instanceType1"
+      name                          = "abcd"
+      instance_type                 = "efgh"
       additional_userdata           = "echo foo bar"
       additional_security_group_ids = [aws_security_group.worker_group_mgmt_one.id]
-      asg_desired_capacity          = descapacity1
+      asg_desired_capacity          = ijkl
     },{
-      name                          = "workergrpname2"
-      instance_type                 = "instanceType2"
+      name                          = "lmno"
+      instance_type                 = "pqrs"
       additional_userdata           = "echo foo bar"
       additional_security_group_ids = [aws_security_group.worker_group_mgmt_one.id]
-      asg_desired_capacity          = descapacity2
+      asg_desired_capacity          = tuvw
     },
   ]
 }
