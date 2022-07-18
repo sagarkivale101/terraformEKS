@@ -19,6 +19,13 @@ module "eks" {
       additional_security_group_ids = [aws_security_group.worker_group_mgmt_one.id]
       asg_desired_capacity          = descapacity
     },
+     {
+      name                          = "workergrpname1"
+      instance_type                 = "instanceType1"
+      additional_userdata           = "echo foo bar"
+      additional_security_group_ids = [aws_security_group.worker_group_mgmt_one.id]
+      asg_desired_capacity          = descapacity1
+    },
   ]
 }
 
