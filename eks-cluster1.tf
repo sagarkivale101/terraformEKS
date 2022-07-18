@@ -20,11 +20,11 @@ module "eks" {
       asg_desired_capacity          = descapacity
     },
      {
-      name                          = "workergrpname1"
-      instance_type                 = "instanceType1"
+      name                          = "abcd"
+      instance_type                 = "efgh"
       additional_userdata           = "echo foo bar"
       additional_security_group_ids = [aws_security_group.worker_group_mgmt_one.id]
-      asg_desired_capacity          = descapacity1
+      asg_desired_capacity          = ijkl
     },
   ]
 }
