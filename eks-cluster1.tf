@@ -18,6 +18,25 @@ module "eks" {
       additional_userdata           = "echo foo bar"
       additional_security_group_ids = [aws_security_group.worker_group_mgmt_one.id]
       asg_desired_capacity          = descapacity
+    },{
+      name                          = "ab12"
+      instance_type                 = "cd34"
+      additional_userdata           = "echo foo bar"
+      additional_security_group_ids = [aws_security_group.worker_group_mgmt_one.id]
+      asg_desired_capacity          = ef56
+    },{
+      name                          = "gh12"
+      instance_type                 = "ij34"
+      additional_userdata           = "echo foo bar"
+      additional_security_group_ids = [aws_security_group.worker_group_mgmt_one.id]
+      asg_desired_capacity          = kl56
+    },
+    {
+      name                          = "mn12"
+      instance_type                 = "op34"
+      additional_userdata           = "echo foo bar"
+      additional_security_group_ids = [aws_security_group.worker_group_mgmt_one.id]
+      asg_desired_capacity          = qr56
     },
   ]
 }
